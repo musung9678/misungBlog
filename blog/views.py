@@ -22,4 +22,4 @@ def create(request):
     blog.body = request.GET['body']
     blog.pub_date = timezone.datetime.now()
     blog.save()
-    return redirect('/blog/'+str(blog.id))
+    return redirect('/blog/'+ str(blog.id))
